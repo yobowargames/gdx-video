@@ -2,14 +2,15 @@ buildscript {
     repositories {
         mavenCentral()
         mavenLocal()
+        google()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:0.14+"
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 }
 
 ext {
-    gdxVersion = "1.5.3"
+    gdxVersion = '1.9.11-SNAPSHOT'
     projectGroup = "gdx-video"
 }
 
@@ -20,6 +21,7 @@ allprojects {
 
     repositories {
         mavenCentral()
+        google()
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
@@ -43,7 +45,7 @@ project(":gdx-video-desktop") {
     dependencies {
         compile project(":gdx-video")
         excluded "com.badlogicgames.gdx:gdx-jnigen:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        compile 'com.badlogicgames.gdx:gdx-backend-lwjgl3:1.9.10'
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
     }
 

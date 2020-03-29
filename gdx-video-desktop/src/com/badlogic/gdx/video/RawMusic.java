@@ -25,7 +25,7 @@ import com.badlogic.gdx.backends.lwjgl3.audio.OpenALMusic;
 /**
  * The RawMusic class extends OpenAlMusic, and retrieves it's audio from a VideoDecoder instance.
  *
- * @author Rob Bogie <rob.bogie@codepoke.net>
+ * @author <rob.bogie@codepoke.net>
  */
 class RawMusic extends OpenALMusic {
 	 VideoDecoder decoder;
